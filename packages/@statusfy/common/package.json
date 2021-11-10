@@ -1,0 +1,63 @@
+{
+  "name": "@statusfy/common",
+  "version": "1.0.0-alpha.0",
+  "description": "Shared Utils for Statusfy",
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juliomrqz/statusfy.git"
+  },
+  "author": {
+    "name": "Julio Marquez",
+    "email": "open-source@marquez.co",
+    "url": "https://marquez.co"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/juliomrqz/statusfy/issues"
+  },
+  "scripts": {
+    "dev:compile": "tsc"
+  },
+  "homepage": "https://github.com/juliomrqz/statusfy#readme",
+  "dependencies": {
+    "autoprefixer": "10.4.0",
+    "chalk": "4.1.2",
+    "consola": "2.15.3",
+    "cssnano": "4.1.11",
+    "dayjs": "1.10.7",
+    "esm": "3.2.25",
+    "fs-extra": "10.0.0",
+    "get-port": "5.1.1",
+    "gray-matter": "4.0.3",
+    "hash-sum": "2.0.0",
+    "lodash.foreach": "4.5.0",
+    "lodash.isstring": "4.0.1",
+    "lodash.template": "4.5.0",
+    "lru-cache": "6.0.0",
+    "ora": "5.4.1",
+    "postcss-combine-duplicated-selectors": "10.0.3",
+    "postcss-import": "13.0.0",
+    "postcss-nested": "5.0.6",
+    "postcss-preset-env": "6.7.0",
+    "slugify": "1.6.1",
+    "tailwindcss": "^1.9.6",
+    "toml": "3.0.0",
+    "tomlify-j0.4": "3.0.0",
+    "upath": "2.0.1",
+    "yaml": "1.10.2"
+  },
+  "devDependencies": {
+    "@types/esm": "3.2.0",
+    "@types/hash-sum": "1.0.0",
+    "@types/lodash.foreach": "4.5.6",
+    "@types/lodash.isstring": "4.0.6",
+    "@types/lodash.template": "4.5.0",
+    "@types/node": "14.14.33",
+    "ts-node": "9.1.1",
+    "typescript": "4.4.4"
+  }
+}

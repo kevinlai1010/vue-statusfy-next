@@ -1,0 +1,30 @@
+{
+  "name": "statusfy-github-pages",
+  "description": "Github Pages",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "gh-pages": "gh-pages",
+    "start": "statusfy start",
+    "generate": "statusfy generate",
+    "new-incident": "statusfy new-incident",
+    "delete-incident": "statusfy delete-incident",
+    "update-incident": "statusfy update-incident",
+    "deploy": "gh-pages -d dist"
+  },
+  "author": {
+    "name": "Julio Marquez",
+    "email": "open-source@marquez.co",
+    "url": "https://marquez.co"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
+  },
+  "dependencies": {
+    "statusfy": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=10"
+  }
+}

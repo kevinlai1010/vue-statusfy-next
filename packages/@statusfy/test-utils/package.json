@@ -1,0 +1,22 @@
+{
+  "name": "@statusfy/test-utils",
+  "version": "1.0.0-alpha.0",
+  "description": "Test Utils for Statusfy",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juliomrqz/statusfy.git"
+  },
+  "author": {
+    "name": "Julio Marquez",
+    "email": "open-source@marquez.co",
+    "url": "https://marquez.co"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/juliomrqz/statusfy/issues"
+  },
+  "homepage": "https://github.com/juliomrqz/statusfy#readme"
+}

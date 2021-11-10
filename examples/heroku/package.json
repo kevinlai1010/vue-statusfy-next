@@ -1,0 +1,26 @@
+{
+  "name": "statusfy-heroku-pages",
+  "description": "Heroku",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "start": "statusfy start",
+    "generate": "statusfy generate",
+    "new-incident": "statusfy new-incident",
+    "delete-incident": "statusfy delete-incident",
+    "update-incident": "statusfy update-incident",
+    "heroku-postbuild": "yarn run generate"
+  },
+  "author": {
+    "name": "Julio Marquez",
+    "email": "open-source@marquez.co",
+    "url": "https://marquez.co"
+  },
+  "dependencies": {
+    "statusfy": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=10"
+  }
+}

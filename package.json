@@ -1,0 +1,80 @@
+{
+  "version": "1.0.0-alpha.0",
+  "private": true,
+  "workspaces": [
+    "packages/@statusfy/*",
+    "packages/demo",
+    "packages/statusfy"
+  ],
+  "description": "A marvelous open source Status Page system",
+  "author": {
+    "name": "Julio Marquez",
+    "email": "open-source@marquez.co",
+    "url": "https://marquez.co"
+  },
+  "contributors": [
+    {
+      "name": "Julio Marquez (@juliomrqz)"
+    },
+    {
+      "name": "Patricia Mora (@patriciajumper)"
+    },
+    {
+      "name": "Claude Giovagnoli (@giovagnoli)"
+    }
+  ],
+  "scripts": {
+    "lerna": "lerna",
+    "lint": "lerna run lint",
+    "lint:fix": "lerna run lint:fix",
+    "prod:build": "lerna run prod:build",
+    "dev:compile": "lerna run dev:compile",
+    "test:demo": "yarn run demo:build && yarn run demo:generate",
+    "test": "yarn run prepare && yarn run prepare-test && yarn run jest",
+    "prepare": "cross-env STATUSFY_LERNA=true lerna run prepare",
+    "prepare-test": "cross-env STATUSFY_LERNA=true lerna run prepare-test",
+    "jest": "cross-env STATUSFY_LERNA=true jest",
+    "update-readme": "cp -f README.md ./packages/statusfy/",
+    "publish-stable": "yarn update-readme && lerna publish --no-git-tag-version --force-publish '*'",
+    "publish-next": "lerna publish --no-git-tag-version --dist-tag next --force-publish '*'",
+    "postinstall": "lerna bootstrap",
+    "demo:build": "cross-env STATUSFY_LERNA=true yarn workspace statusfy-demo build",
+    "demo:dev": "cross-env STATUSFY_LERNA=true yarn workspace statusfy-demo dev",
+    "demo:generate": "cross-env STATUSFY_LERNA=true yarn workspace statusfy-demo generate",
+    "demo:start": "cross-env STATUSFY_LERNA=true yarn workspace statusfy-demo start",
+    "demo:delete-incident": "cross-env STATUSFY_LERNA=true yarn workspace statusfy-demo delete-incident",
+    "demo:update-incident": "cross-env STATUSFY_LERNA=true yarn workspace statusfy-demo update-incident",
+    "update-changelog": "conventional-changelog -p angular -r 2 -i CHANGELOG.md -s"
+  },
+  "devDependencies": {
+    "@babel/core": "7.16.0",
+    "@babel/plugin-transform-runtime": "7.16.0",
+    "@commitlint/cli": "11.0.0",
+    "@commitlint/config-conventional": "11.0.0",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "10.1.0",
+    "babel-jest": "27.3.1",
+    "conventional-changelog-cli": "2.1.1",
+    "cross-env": "7.0.3",
+    "eslint": "7.32.0",
+    "eslint-loader": "4.0.2",
+    "eslint-plugin-jest": "24.7.0",
+    "glob-promise": "4.2.2",
+    "husky": "4.3.8",
+    "jest": "27.3.1",
+    "lerna": "3.22.1"
+  },
+  "resolutions": {
+    "@types/node": "12.20.36"
+  },
+  "engines": {
+    "node": ">=v10.24.1",
+    "npm": ">=7.24.2"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "yarn run lint"
+    }
+  }
+}

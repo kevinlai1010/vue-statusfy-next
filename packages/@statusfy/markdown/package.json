@@ -1,0 +1,38 @@
+{
+  "name": "@statusfy/markdown",
+  "version": "1.0.0-alpha.0",
+  "description": "Markdown Parser for Statusfy",
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juliomrqz/statusfy.git"
+  },
+  "author": {
+    "name": "Julio Marquez",
+    "email": "open-source@marquez.co",
+    "url": "https://marquez.co"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/juliomrqz/statusfy/issues"
+  },
+  "homepage": "https://github.com/juliomrqz/statusfy#readme",
+  "dependencies": {
+    "fs-extra": "10.0.0",
+    "gray-matter": "4.0.3",
+    "markdown-it": "12.2.0",
+    "markdown-it-container": "3.0.0",
+    "markdown-it-emoji": "2.0.0",
+    "toml": "3.0.0",
+    "upath": "2.0.1",
+    "validator": "13.6.0"
+  },
+  "devDependencies": {
+    "@statusfy/test-utils": "1.0.0-alpha.0",
+    "@types/fs-extra": "9.0.13",
+    "@types/validator": "13.6.6"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "name": "@statusfy/core",
+  "version": "1.0.0-alpha.0",
+  "description": "Core of Statusfy",
+  "author": {
+    "name": "Julio Marquez",
+    "email": "open-source@marquez.co",
+    "url": "https://marquez.co"
+  },
+  "license": "Apache-2.0",
+  "main": "lib/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juliomrqz/statusfy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/juliomrqz/statusfy/issues"
+  },
+  "homepage": "https://marquez.co/statusfy",
+  "keywords": [
+    "marquez",
+    "statusfy",
+    "generator",
+    "web-application",
+    "statuspage"
+  ],
+  "dependencies": {
+    "@11ty/eleventy": "0.12.1",
+    "@statusfy/markdown": "1.0.0-alpha.0",
+    "chokidar": "3.5.2",
+    "nunjucks": "3.2.3"
+  },
+  "engines": {
+    "node": ">=v10.24.1",
+    "npm": ">=7.24.2"
+  }
+}

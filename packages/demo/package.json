@@ -1,0 +1,28 @@
+{
+  "private": true,
+  "name": "statusfy-demo",
+  "version": "1.0.0-alpha.0",
+  "description": "Statusfy demo",
+  "scripts": {
+    "prepare": "node scripts/prepare.js",
+    "statusfy": "statusfy",
+    "start": "npm run prepare && statusfy start",
+    "generate": "npm run prepare && statusfy generate",
+    "new-incident": "statusfy new-incident",
+    "delete-incident": "statusfy delete-incident",
+    "update-incident": "statusfy update-incident"
+  },
+  "author": {
+    "name": "Julio Marquez",
+    "email": "open-source@marquez.co",
+    "url": "https://marquez.co"
+  },
+  "license": "Apache-2.0",
+  "dependencies": {
+    "statusfy": "1.0.0-alpha.0"
+  },
+  "engines": {
+    "node": ">=v10.24.1",
+    "npm": ">=7.24.2"
+  }
+}

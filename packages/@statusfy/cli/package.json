@@ -1,0 +1,64 @@
+{
+  "name": "@statusfy/cli",
+  "version": "1.0.0-alpha.0",
+  "description": "CLI for Statusfy",
+  "bin": {
+    "statusfy": "./bin/statusfy"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juliomrqz/statusfy.git"
+  },
+  "author": {
+    "name": "Julio Marquez",
+    "email": "open-source@marquez.co",
+    "url": "https://marquez.co"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/juliomrqz/statusfy/issues"
+  },
+  "homepage": "https://github.com/juliomrqz/statusfy#readme",
+  "scripts": {
+    "tsc": "tsc",
+    "dev:compile": "ncc build src/index.ts -o ./bin/lib --no-cache -e @statusfy/core -e @statusfy/editor -e statusfy",
+    "dev:compile:status": "yarn dev:compile -s --stats-out ./webpack-stats.json",
+    "prod:compile": "yarn dev:compile -m --v8-cache",
+    "prod:compile:status": "yarn prod:compile --stats-out ./webpack-stats.json"
+  },
+  "engines": {
+    "node": ">= v10.24.1"
+  },
+  "devDependencies": {
+    "@statusfy/common": "1.0.0-alpha.0",
+    "@statusfy/config": "1.0.0-alpha.0",
+    "@statusfy/core": "1.0.0-alpha.0",
+    "@types/fs-extra": "9.0.13",
+    "@types/inquirer": "7.3.3",
+    "@types/lodash": "4.14.176",
+    "@types/lru-cache": "5.1.1",
+    "@types/node": "14.14.33",
+    "@types/opener": "1.4.0",
+    "@types/semver": "7.3.9",
+    "@types/yaml": "1.9.7",
+    "@zeit/ncc": "0.22.3",
+    "chalk": "4.1.2",
+    "commander": "8.3.0",
+    "consola": "2.15.3",
+    "fs-extra": "10.0.0",
+    "inquirer": "8.2.0",
+    "locale-code": "2.0.2",
+    "lodash": "4.17.21",
+    "lru-cache": "6.0.0",
+    "opener": "1.5.2",
+    "resolve-from": "5.0.0",
+    "semver": "7.3.5",
+    "tomlify-j0.4": "3.0.0",
+    "ts-node": "9.1.1",
+    "typescript": "4.4.4",
+    "yaml": "1.10.2"
+  }
+}
